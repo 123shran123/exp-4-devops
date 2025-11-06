@@ -9,7 +9,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/123shran123/exp-4-devops.git',
-                credentialsId: 'github-pat-shreyas'
             }
         }
         stage('Setup Environment') {
